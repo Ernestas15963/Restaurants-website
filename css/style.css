@@ -1,0 +1,627 @@
+*,
+*::before,
+*::after {
+    box-sizing:border-box;
+}
+
+html {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+}
+
+body {
+    margin: 0;
+}
+
+/*header part*/
+
+.site-header {
+    background-color: #d9e2eb;
+    width:100%;
+    display:block;
+}
+
+.container {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+
+.container a {
+    font-size: 1.125rem;
+    letter-spacing: 0.02em;
+}
+
+.flex-container {
+    display:flex;
+}
+
+.site-header .container {
+    justify-content: space-between;
+    align-items:center;
+}
+
+.main-nav li {
+    list-style:none;
+}
+
+.main-nav a {
+    color:rgb(49, 45, 45);
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1rem;
+    padding: 10px 17px;
+    margin: 0 5px;
+}
+
+.main-nav a:hover, .main-nav a:active {
+    background-color: #FFD700;
+    border-radius: 5px;
+}
+
+.mobile-nav {
+    display: none;
+}
+
+.logo {
+    padding: 55px 0;
+    cursor: pointer;
+}
+
+
+
+/*Special-offers-menu (Hero)*/
+
+.Special-offers-men{
+    background-color: #edeff1;
+}
+
+.special-offers{
+    text-align: center;
+}
+
+.special-offers h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    margin: 84px 0;
+    color: #31353e;
+}
+
+.special-options {
+    text-align: center;
+    margin-bottom: 105px;
+}   
+
+.special-menu{
+    margin: 0 15px;
+}
+
+.special-menu h4 {
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: #31353e;
+    margin-top: 40px;
+}
+
+.special-menu p {
+    font-size: 0.75rem;
+    font-weight: bolder;
+    margin-top: 19px;
+    margin-bottom: 38px;
+}
+
+.special-btn a {
+    font-size: 0.94rem;
+    font-weight: lighter;
+    color: #151516;
+    background-color: #FFD700;
+    padding: 15px 40px;
+    border-radius: 50px;
+    text-decoration: none;
+}
+
+.special-menu img {
+    width: 100%;
+}
+
+
+/*Slides part*/
+
+.slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+  }
+  
+  .mySlides {
+      display: none;
+  }
+  
+  
+  .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 1.125rem;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+  }
+  
+  
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  
+  .prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+  }
+  
+  
+  .text {
+    color: #f2f2f2;
+    font-size: 1.5rem;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+  }
+  
+  
+  .numbertext {
+    color: #f2f2f2;
+    font-size:0.9375rem;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+  }
+  
+  
+  .dot {
+    cursor:pointer;
+    height: 13px;
+    width: 13px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  
+  .active, .dot:hover {
+    background-color: #717171;
+  }
+  
+  .fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @-webkit-keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+  
+  @keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+  
+
+/*News part-form*/
+
+.news{
+    background-image: url(../images/form.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding-bottom: 60px;
+    width: 70%;
+    margin: 0 auto;
+}
+
+.news-title {
+    text-align: center;
+}
+
+.news-title h2{
+    font-size: 2.25rem;
+    font-weight: bold;
+    color: rgb(100, 96, 96);
+    padding-top: 92px;
+    padding-bottom: 22px;
+}
+
+.news-title p {
+    font-size: 1rem;
+    font-weight: bolder;
+    color: rgb(100, 96, 96);
+    padding-bottom: 32px;
+}
+
+#contact input[type="text"], #contact input[type="email"], #contact input[type="tel"], #contact input[type="url"], #contact textarea {
+	width:50%;
+    border:2px solid black;
+    border-radius: 20px;
+	background:#ffffff;
+	margin:0 auto;
+    padding:20px;
+    height: 30px;
+}
+
+#contact textarea {
+	height:120px;
+	max-width:100%;
+    resize:none;
+}
+
+#contact button[type="submit"] {
+	cursor:pointer;
+    width:20%;
+    border: 2px solid black;
+    border-radius: 25px;
+	background:#FFD700;
+	color:black;
+	margin:0 0 5px;
+	padding:10px;
+    font-size:0.85rem;
+}
+
+#contact button[type="submit"]:hover {
+	background:rgb(132, 209, 235);
+	-webkit-transition:background 0.3s ease-in-out;
+	-moz-transition:background 0.3s ease-in-out;
+	transition:background-color 0.3s ease-in-out;
+}
+
+#contact button[type="submit"]:active { box-shadow:inset 0 1px 3px rgba(0, 0, 0, 0.5); }
+
+#contact input:focus, #contact textarea:focus {
+	outline:0;
+	border:1px solid #999;
+}
+::-webkit-input-placeholder {
+ color:#888;
+}
+:-moz-placeholder {
+ color:#888;
+}
+::-moz-placeholder {
+ color:#888;
+}
+:-ms-input-placeholder {
+ color:#888;
+}
+
+/*social part*/
+
+.inst-fb-img img {
+    width: 100%;
+}
+
+.social-fb-ins h3 {
+    font-size: 1.875rem;
+    font-weight: bold;
+    color: black;
+    margin: 20px 20px;
+}
+
+.social-fb-ins p {
+    font-size: 0.75rem;
+    font-weight: bolder;
+    color: black;
+    margin: 20px 20px;
+}
+
+.btn-fb-ins a {
+    font-size: 0.75rem;
+    font-weight: 400;
+    text-decoration: none;
+    border-radius: 50px;
+    background-color: rgb(173, 197, 241);
+    padding: 5px 30px;
+    color: black;
+    margin: 20px 20px;
+}
+
+/*contact part*/
+
+.contact-info {
+    justify-content: space-around;
+}
+
+.contacts{
+    margin: 0 15px;
+}
+
+.contacts p {
+    font-size: 1.875rem;
+    font-weight: bold;
+    color: brown;
+}
+
+.contacts a {
+    font-size: 1.25rem;
+    font-weight: bold;
+    text-decoration: none;
+    color: black;
+}
+
+.contacts a:hover {
+    color: red;
+    text-decoration: underline;
+}
+
+.contact-main {
+    background-color: #ffffff;
+    padding: 40px 0;
+}
+
+.fb-ins{
+    margin:10px 0 ;
+}
+
+
+/*footer*/
+.footer {
+    background-image: url(../images/backgroud_bottom.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 30px 0;
+}
+
+.last-part{
+    justify-content: center;
+    align-items: center;
+}
+
+.last-part h4 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.last-part p {
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+
+/*about page*/
+
+.restaurant-1mg {
+    margin: 10px 10px;
+}
+
+.restaurant-1mg img {
+    width: 100%;
+    height: 100%;
+}
+
+.about-text {
+    width: 100%;
+    text-align: center;
+    margin: 20px 10px;
+}
+
+.about-text h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #31353e;
+}
+
+.about-text p {
+    font-size: 1.25rem;
+    font-weight: 400;
+}
+
+/*Special-offers page*/
+
+.special1 img {
+    height: 80%;
+    width: 100%;
+}
+.gap1 {
+    border: 2px solid rgb(100, 96, 96);
+    margin: 25px 25px;
+}
+
+.special1 h2 {
+    text-align: center;
+    color:red;
+    font-size: 1.75rem;
+    font-weight: 600;
+}
+.special1 p {
+    text-align: center;
+    color: #31353e;
+    font-size: 1.25rem;
+}
+
+/*menu page*/
+
+.web1 {
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-color: #ffffff;
+    color: rgb(100, 96, 96);
+    font-size: 1.25rem;
+}
+.menu-page {
+    justify-content: center;
+    align-items: center;
+    padding: 60px;
+}
+.menu-page h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    color: rgb(100, 96, 96);
+}
+
+/*about-mobile-part*/
+
+@media screen and (max-width: 970px) {
+
+    .about-mb {
+        display: block;
+    }
+
+    .about-text{
+        margin: 0px auto;
+        padding-bottom: 50px;
+    }
+
+
+    .about-text h1 {
+        font-size: 2rem;
+        
+    }
+    
+    .about-text p {
+        font-size: 1rem;
+    }
+}
+
+/*mobile-index-part*/
+
+@media screen and (max-width: 840px) {
+    .contact-info{
+        display: block;
+        text-align: center;
+        margin: 10px 0;
+    }
+    
+    .contacts p{
+        font-size: 1.875rem;
+    }
+    .contacts a {
+        font-size: 1.25rem;
+    }
+    .news{
+        width: 100%;
+    }
+}
+
+
+@media screen and (max-width: 720px) {
+  
+    .main-nav {
+        display: none;
+    }
+    
+    .site-header .container {
+        display: block;
+    }
+    
+   
+    
+    .mobile-nav {
+        position: relative;
+        width: 100%;
+        display: block;
+    }
+    
+    .mobile-nav li {
+        list-style: none;
+    }
+    
+    .mobile-nav ul {
+        flex-direction: column;
+        display: none;
+        position: absolute;
+        width: 100%;
+        padding: 20px;
+        background-color: #bbbba5;
+    }
+    
+    .mobile-nav a {
+        color: #3c4761;
+        font-size: 1rem;
+        text-transform: uppercase;
+        text-decoration: none;
+        margin: 0 5px;
+        padding: 10px 17px;
+        display: block;
+    }
+    
+    .mobile-nav a:hover, mobile-nav a:active {
+        background-color: #f0eea7;
+        border-radius: 5px;
+    }
+    
+    .mobile-nav a.icon {
+        display: block;
+        position: absolute;
+        right: 0;
+        top: -100px;
+        color: #8d1d1d;
+    }
+    .special-options{
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        margin-top: 100px;
+    }
+    .special-menu {
+        margin: 20px 0;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    #contact button[type="submit"] {
+        width: 30%;
+    }
+    #contact input[type="text"], #contact input[type="email"], #contact input[type="tel"], #contact input[type="url"], #contact textarea {
+        width: 70%;
+    }
+    
+}
+
+
+@media screen and (max-width: 450px) {
+
+    #contact input[type="text"], #contact input[type="email"], #contact input[type="tel"], #contact input[type="url"], #contact textarea {
+        width: 90%;
+    }
+    
+
+}
+
+
+@media screen and (max-width: 390px) {
+
+    .last-part h4 {
+        text-align: center;
+        font-size: 1.25rem;
+    }
+
+    .last-part p {
+        text-align: center;
+        font-size: 1rem;
+    }
+}
+
+
+/*mobile special offers page*/
+
+@media screen and (max-width: 720px) {
+
+    .special {
+        display: block;
+    }
+}
+
+
